@@ -1,10 +1,9 @@
-# Ask user for their name and remove whitespace from str and capitalize
-name = input("What is your name? ").strip().title()
+def main():
+    hello()
+    name = input("What is your name? ")
+    hello(name)
 
-# Split user's name into first name and last name
-first, last = name.split(" ")
+def hello(to="world"): # Parameter with default value
+    print("hello," , to)
 
-# Say hello to user
-print(f"hello, {first}")
-
-# Without 'f' {name} will be printed as a literal. 'f' tells the print function to format the string.
+main()
