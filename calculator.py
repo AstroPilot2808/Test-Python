@@ -13,4 +13,5 @@ def main():
 def square(x):
     return x**x
 
-main()
+if __name__ == "__main__":
+    main()
